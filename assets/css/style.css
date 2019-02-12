@@ -60,6 +60,11 @@ color: #f2f2f2 !important;
 
 .fa-github-square:before {
     content: "\f092";
-    transform: unset !important;
+    /* transform: unset !important; */
 color: #333 !important;
+}
+
+.fa-github-square:hover {
+    color: black;
+
 }
