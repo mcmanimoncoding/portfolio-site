@@ -15,30 +15,43 @@
 
 body {
     font-family: "Lato", sans-serif;
+
+}
+
+.gradient{
+background-image: radial-gradient(
+    ellipse at bottom right, 
+   #ffffff,
+    #cfffe5
     
+);
+
 }
 
 /* The sidebar menu */
 
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+/* Remove the navbar's default margin-bottom and rounded borders */
+
 .navbar {
     /* margin-bottom: 0; */
     border-radius: 0;
-  }
-  
-  /* Add a gray background color and some padding to the footer */
-  footer {
+    background-image: radial-gradient(
+        ellipse at right,
+        black, #333333
+    )
+}
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
     background-color: #f2f2f2;
     padding: 25px;
-  }
-  
+}
 
 .jumbotron {
-    
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
     color: #f2f2f2 !important;
     margin: 2px !important;
-
 }
 
 .h1 {
@@ -46,7 +59,7 @@ body {
 }
 
 i {
-color: #f2f2f2 !important;
+    color: #f2f2f2 !important;
 }
 
 /* #github-link{
@@ -61,10 +74,7 @@ color: #f2f2f2 !important;
 .fa-github-square:before {
     content: "\f092";
     /* transform: unset !important; */
-color: #333 !important;
+    color: #333 !important;
 }
 
-.fa-github-square:hover {
-    color: black;
-
-}
+.fa-github-square:hover {}
