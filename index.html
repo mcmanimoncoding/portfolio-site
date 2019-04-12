@@ -15,13 +15,17 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
   integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <script src="./assets/js/index.js"></script>
-
+  
+  
+  
+  <link defer rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+  <script defer src="./node_modules/sal.js/dist/sal.js"></script>
+  <script defer src="./assets/js/index.js"></script>
 </head>
 
 <body class="gradient">
@@ -53,7 +57,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron" data-sal="">
     <img src="" alt="" srcset="">
     <div class="container text-center">
       <div id="name-card">
@@ -69,7 +73,7 @@
         <div class="container-fluid container bg-3 text-center">
           <div class="row">
             <div class="col-sm-3">
-              <p class="text-primary">HTML</p>
+              <p class="text-primary" data-sal="">HTML</p>
               <i class="fab fa-html5 fa-7x"></i>
               <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
             </div>
@@ -122,6 +126,6 @@
     <!-- <p>Footer Text</p> -->
   </footer>
 </body>
-<img src=" " alt="">
+
 
 </html>
