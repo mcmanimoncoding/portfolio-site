@@ -15,7 +15,7 @@
 
 body {
     font-family: "Lato", sans-serif;
-    
+    min-height: 1555px;
 
 }
 
@@ -96,7 +96,10 @@ i {
 .fa-github-square:hover {}
 
 #name-card{
-    color: #ffffff
+    color: #ffffff;
+    position: relative;
+    /* left: -165px; */
+    
 }
 
 #email-btn{
@@ -104,6 +107,9 @@ i {
 }
 
 @media only screen and (max-width: 455px){
+    body{
+       min-height:  5255px;
+    }
     #name-card{
         color: #333
     }
