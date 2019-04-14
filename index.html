@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,8 +26,8 @@
 
 
   <link defer rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
-  <script defer src="./node_modules/sal.js/dist/sal.js"></script>
-  <script defer src="./assets/js/index.js"></script>
+  <!-- <script defer src="./node_modules/sal.js/dist/sal.js"></script> -->
+  <script  src="./assets/js/index.js"></script>
 </head>
 
 <body class="gradient">
@@ -76,23 +78,23 @@
 
 
       <div class="container-fluid container bg-3 text-center">
-        <div class="row">
-          <div class="col-sm-3">
+        <div class="row scroll-animations">
+          <div class="col-sm-3 animated">
             <p class="text-primary" data-sal="">HTML</p>
             <i class="fab fa-html5 fa-7x"></i>
             <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 animated">
             <p class="text-warning">CSS</p>
             <i class="fab fa-css3-alt fa-7x"></i>
             <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 animated">
             <p class="text-success">JavaScript</p>
             <i class="fab fa-js fa-7x"></i>
             <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 animated">
             <p class="text-danger">NodeJS</p>
             <i class="fab fa-node-js fa-7x"></i>
             <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
@@ -109,7 +111,7 @@
   <div class="container" id="about-me-container">
     <div class="row">
       <div class="card col-sm-7" style="">
-        <div class="card-body">
+        <div class="card-body animated slideInLeft">
           <div class="card-title">
             <h1>About Me</h1>
             <hr>
@@ -124,7 +126,7 @@
 
 
 
-
+              <a href="https://drive.google.com/open?id=1TTf5kprJ1X33OQnz8G_xl6iOt4zfPrEp" target="_empty">Check Out My Resume</a>
             </p>
           </div>
         </div>
@@ -166,10 +168,10 @@
         </div>
       </div>
       <div class="row">
-          <div class="container-fluid bg-3 text-center">
+          <div class="container-fluid bg-3 text-center scroll-animations">
               <h3>Some of my Work</h3><br>
               <div class="row float-left">
-                <div class="col-sm-5" data-sal="">
+                <div class="col-sm-5 animated" data-sal="">
                   <p><h4>Date Nights</h4></p>
                   <img src="./assets/images/date-nites-pics/date-nights-pic.png" class="img-responsive" style="width:100%" alt="Image" href="https://mcmanimoncoding.github.io/pt-project-1/index.html">
                   <a href="https://mcmanimoncoding.github.io/pt-project-1/index.html"></a>
@@ -206,7 +208,7 @@
     </div>
   </div>
 
-  <footer class="container-fluid text-center">
+  <footer class="text-center mx-5" style="margin-top: 35px;"> 
     <!-- <p>Footer Text</p> -->
   </footer>
 </body>
