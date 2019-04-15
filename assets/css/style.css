@@ -13,6 +13,23 @@
     margin-left: -250px;
 }
 
+.card{
+    max-width: 100%;
+}
+
+img{
+    transition: transform 1s;
+    max-width: 100%;
+    
+}
+.container #portfolio .card img:hover{
+    transform: scale(1.1);
+    overflow: hidden; 
+    /* z-index: 1; */
+}
+
+
+
 body {
     font-family: 'PT Sans Narrow', sans-serif;
     font-family: 'Quicksand', sans-serif;
@@ -41,14 +58,14 @@ fa-github-square:before {
 
 /* Remove the navbar's default margin-bottom and rounded borders */
 
-.navbar {
+/* .navbar {
     margin-bottom: 0;
     border-radius: 0;
     background-image: url(../images/backgrounds/checkered-light-emboss\ \(1\).png) radial-gradient(
         
         gray, #333333, white
     )
-}
+} */
 
 /* Add a gray background color and some padding to the footer */
 i{
@@ -56,7 +73,9 @@ i{
     margin: 25px;
     color: #333;
 }
-
+.navbar-collapse.collapse.in {
+    display: block!important;
+  }
 footer {
     position: fixed;
     background-color: #f2f2f2;
@@ -73,7 +92,7 @@ footer {
     background-position-y: -295px;
     color: #f2f2f2 !important;
     margin: 2px !important;
-    box-shadow: inset 0 0 0 1000px rgba(94, 94, 94, 0.521);
+    box-shadow: inset 0 0 0 1000px rgba(39, 39, 39, 0.808);
     margin-top: -5px;
     height: 725px;
 
@@ -102,7 +121,10 @@ i {
     color: #333 !important;
 }
 
-.fa-github-square:hover {}
+.fa-github-square:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+}
 
 #name-card{
     color: #ffffff;
@@ -120,10 +142,12 @@ i {
        min-height:  3655px;
     }
     #name-card{
-        color: #333
+        /* color: #333 */
     }
     .jumbotron{
         background-position: 0%;
         height: 100%;
     }
 }
+
+
