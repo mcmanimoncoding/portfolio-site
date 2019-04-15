@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 
 
@@ -22,13 +24,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-  <link rel="stylesheet" href="assets/css/style.css">
 
 
 
   <link defer rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
   <script defer src="./node_modules/sal.js/dist/sal.js"></script>
   <script src="./assets/js/index.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="gradient">
@@ -42,8 +44,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- <a class="navbar-brand" href="#">Portfolio</a> -->
-        <!-- <i class="fas fa-user-astronaut fa-5x" href="#"></i> -->
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -57,6 +57,7 @@
           <li><a href="https://drive.google.com/open?id=1TTf5kprJ1X33OQnz8G_xl6iOt4zfPrEp">Resume</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
+
 
         </ul>
       </div>
@@ -105,13 +106,13 @@
 
       </div>
     </div>
-  </div><br>
+  </div>
 
 
   <br><br>
   <!-- </div> -->
-  <div class="container" id="about-me-container">
-    <div class="row">
+  <div class="container mx-5" id="about-me-container">
+    <div class="row mx-5">
       <div class="col-sm-6" id="portfolio" data-sal="">
 
         <h1>Some of my Work</h2>
@@ -120,23 +121,28 @@
           <p>
             <h4>Date Nights</h4>
           </p>
+          <a href="https://mcmanimoncoding.github.io/pt-project-1/index.html" target="_empty">
           <img src="./assets/images/date-nites-pics/date-nights-pic.png" class="img-responsive" style="width:100%"
             alt="Image" href="https://mcmanimoncoding.github.io/pt-project-1/index.html">
-          <a href="https://mcmanimoncoding.github.io/pt-project-1/index.html"></a>
+          </a>
           <p>
             Designed for mobile use, Date Nights is a streamlined, intuitive app for putting together a night (or day)
             out on the fly!
           </p>
           <h4>Train Schedule</h4>
-          <img src="./assets/images/train-pics/Screen Shot 2019-04-14 at 4.24.47 PM.png" class="img-responsive"
+          <a href="https://mcmanimoncoding.github.io/pt-train-schedule/" target="_empty">
+            <img src="./assets/images/train-pics/Screen Shot 2019-04-14 at 4.24.47 PM.png" class="img-responsive"
             style="width:100%" alt="Image">
+          </a>
           <p>
             A simulated scheduling app that takes form inputs and calculates arrival times using MomentJS, Google
             Firebase, Bootstrap, and JQuery.
           </p>
           <h4>Morbidity Rate Tracker</h4>
+          <a href="https://mcmanimoncoding.github.io/project-1-morbidity/">
           <img src="./assets/images/morbidity-pics/Screen Shot 2019-04-14 at 4.27.27 PM.png" class="img-responsive"
-            style="width:100%" alt="Image"><a href="https://mcmanimoncoding.github.io/project-1-morbidity/"></a>
+            style="width:100%" alt="Image">
+            </a>
 
           <p>My GitHub</p>
           <a href="https://github.com/mcmanimoncoding" target="_empty" id="github-link">
@@ -145,72 +151,82 @@
           </a>
 
       </div>
-    
-    <div class="card col-sm-4" id="about-me/contact" style="">
-      <div class="row">
-        <div class="card-body">
-          <div class="card-title">
-            <h1>About Me</h1>
-            <hr>
-          </div>
-          <div class="card-text">
-            <p>
-              Currently a freelance developer out of Phoenix, Arizona, with a background in Medical Anthropology,
-              Daniel fosters an ever-growing passion for programming and increasing his depth of knowledge about all
-              things code and all things STEM.
 
-              <br>
-
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, inventore libero! Nulla facilis nam
-              nostrum id harum dolorem ipsum odio corporis, voluptas deleniti eum vel aut voluptate qui! Harum,
-              ullam.
-              br
-
-              <a id="resume-link" href="https://drive.google.com/open?id=1TTf5kprJ1X33OQnz8G_xl6iOt4zfPrEp"
-                target="_empty">Check Out My
-                Resume</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="card" id="contact-form" style="">
+      <div class="card col-sm-4" id="about-me/contact" style="">
+        <div class="row">
           <div class="card-body">
             <div class="card-title">
-              <h2>Contact Me</h2>
+              <h1>About Me</h1>
               <hr>
             </div>
             <div class="card-text">
-              <form>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">I am a...</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Potential Client</option>
-                    <option>Recruiter</option>
-                    <option>Developer</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Your Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="13"></textarea>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                </div>
-                <button class="btn-primary" id="email-btn" type="submit">Send It!</button>
-              </form>
+              <p>
+                Currently a freelance developer out of Phoenix, Arizona, with a background in Medical Anthropology,
+                Daniel fosters an ever-growing passion for programming and increasing his depth of knowledge about all
+                things code and all things STEM.
+
+                <br>
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, inventore libero! Nulla facilis nam
+                nostrum id harum dolorem ipsum odio corporis, voluptas deleniti eum vel aut voluptate qui! Harum,
+                ullam.
+                br
+
+                <a id="resume-link" href="https://drive.google.com/open?id=1TTf5kprJ1X33OQnz8G_xl6iOt4zfPrEp"
+                  target="_empty">Check Out My
+                  Resume</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="card" id="contact-form" style="">
+            <div class="card-body">
+              <div class="card-title">
+                <h2>Contact Me</h2>
+                <hr>
+                <a href="https://www.instagram.com/mcmanicode/?hl=en" style="color: #333333;">
+                  <i class="fab fa-instagram text-success"></i>Instagram
+                </a> <br>
+                <a href="https://www.linkedin.com/in/daniel-mcmanimon-a15880a0/" target="_empty" style="color: #333333;">
+                  <i class="fab fa-linkedin text-success"></i>LinkedIn
+                </a> <br>
+                <a href="https://github.com/mcmanimoncoding" target="_empty" style="color: #333333;">
+                  <i class="fab fa-github-square text-success"></i>GitHub
+              </div> <br>
+              <div class="card-text">
+                </a>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">I am a...</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Potential Client</option>
+                      <option>Recruiter</option>
+                      <option>Developer</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="13"></textarea>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                  </div>
+                  <button class="btn-primary" id="email-btn" type="submit">Send It!</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
 
