@@ -17,15 +17,25 @@
     max-width: 100%;
 }
 
-img{
+.card{
     transition: transform 1s;
     max-width: 100%;
     
 }
-.container #portfolio .card img:hover{
+.container #portfolio .card:hover{
     transform: scale(1.1);
     overflow: hidden; 
-    /* z-index: 1; */
+    z-index: 99;
+    
+}
+
+.navbar li{
+    transition: transform .25s;
+}
+
+.navbar li:hover{
+    transform: scale(1.4)
+    
 }
 
 
