@@ -27,11 +27,10 @@
 
 
 
-
-
   <link defer rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
   <script defer src="./node_modules/sal.js/dist/sal.js"></script>
-  <script src="./assets/js/index.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script defer src="./assets/js/index.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -219,8 +218,10 @@
             </div> <br>
             <div class="card-text">
               </a>
+
+              <!-- input contact form  -->
               <form>
-                <div class="form-group">
+                <div class="form-group" id="contact-form" >
                   <label for="email-input">Email address</label>
                   <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
                 </div>
@@ -238,10 +239,10 @@
                 </div>
                 <div class="row">
                   <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <input type="checkbox" class="custom-control-input" id="robot-check">
                     <label class="custom-control-label mx-3" for="customCheck1">I am not a robot.</label>
                   </div>
-                  <button class="btn-outline-primary btn-lg mx-2" id="email-btn" type="button">Send</button>
+                  <button class="btn-outline-primary btn-lg mx-2" id="email-btn" type="submit">Send</button>
                 </div>
                 </form>
             </div>

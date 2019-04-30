@@ -1,37 +1,56 @@
-// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
-// $(document).ready(function() {
-//   // Check if element is scrolled into view
-//   function isScrolledIntoView(elem) {
-//     var docViewTop = $(window).scrollTop();
-//     var docViewBottom = docViewTop + $(window
-// ).height();
 
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).height();
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDTtsJoaBB-2HwkdTiyBDUeIemrTb7ufEg",
+    authDomain: "fir-contactform-b2a3d.firebaseapp.com",
+    databaseURL: "https://fir-contactform-b2a3d.firebaseio.com",
+    projectId: "fir-contactform-b2a3d",
+    storageBucket: "fir-contactform-b2a3d.appspot.com",
+    messagingSenderId: "234683187977"
+  };
+  firebase.initializeApp(config);
 
-//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-//   }
-//   // If element is scrolled into view, fade it in
-//   $(window).scroll(function() {
-//     $('.scroll-animations 
-//     .animated').each(function() {
-//       if (isScrolledIntoView(this) === true) {
-//         $(this).addClass('fadeInRight');
-//       }
-//     });
+//   reference messages collection
+
+let messagesRef= firebase.database().ref('messages');
+
+document.getElementById('contact-form').addEventListener('submit', submitContact);
+
+function submitContact(event){
+    event.preventDefault();
+    console.log("submit")
     
-//   });
-// });
+    
+    // contact form values
+    let email = $("#email-input");
+    let role = $("#role-input");
+    let message = $("#message-input");
+    let check = $("#robot-check");
 
+    console.log(email[0].value);
+    console.log(role[0].value);
+    console.log(message[0].value);
 
-// function toggle() {
-//   var button = document.querySelector('.toggle');
-//   var overlay = document.querySelector('.glass');
-//   if (overlay.className === 'glass down') {
-//     overlay.className = 'glass up';
-//     button.innerText = '-';
-//   } else {
-//     overlay.className = 'glass down';
-//     button.innerText = '+';
-//   }
-// }
+    // let email = emailVal[0].value;
+    // let role = roleVal[0].value;
+    // let message = messageVal[0].value;
+
+    // console.log(email)  
+
+    saveContact(email, role, message);
+}
+
+// form value function
+
+function getValues(id){
+   return document.getElementById(id);
+}
+
+function saveContact(email, role, message){
+    let newMessageRef = messagesRef.push(); 
+    newMessageRef.set({
+        email: email[0].value,
+        role: role[0].value,
+        message: message[0].value,
+    })
+}
